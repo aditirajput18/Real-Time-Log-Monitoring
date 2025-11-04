@@ -29,18 +29,16 @@ It streams simulated application logs, processes them serverlessly, and visualiz
 ## ⚙️ How to Use
 
 ### 1️⃣ Clone the Repository
-```bash
 git clone https://github.com/<your-username>/real-time-log-monitoring-dashboard.git  
 cd real-time-log-monitoring-dashboard
 
 ### 2️⃣ Configure AWS CLI
-```bash
+
 
 Make sure your AWS credentials are configured:
 aws configure
 
 ### 3️⃣ Build and Package Lambda
-```bash
 
 Navigate to the Lambda directory and build the deployment package:
 
@@ -48,7 +46,6 @@ cd lambda
 bash build_layer.sh
 
 ### 4️⃣ Deploy Infrastructure using Terraform
-```bash
 
 Initialize and apply the Terraform configuration to create AWS resources:
 
@@ -60,7 +57,6 @@ terraform apply -auto-approve
 Once deployment is complete, note down the OpenSearch Dashboard URL from the Terraform output.
 
 ### 5️⃣ Start Sending Logs
-```bash
 
 Run the log simulator to push logs into Kinesis:
 
@@ -68,7 +64,6 @@ cd ../log-simulator
 python3 log_producer.py
 
 ### 6️⃣ View Logs in OpenSearch Dashboard (Kibana)
-```bash
 
 Open the OpenSearch Dashboard URL output from Terraform.
 
@@ -80,7 +75,6 @@ app-logs*
 Explore and visualize logs in real time.
 
 ### 🧹 Cleanup
-```bash
 
 To remove all AWS resources and prevent charges:
 
@@ -96,3 +90,4 @@ Handling event-driven serverless architectures with Lambda and Kinesis.
 Automating deployments using Terraform.
 
 Setting up observability dashboards using OpenSearch (Kibana).
+``` bash
