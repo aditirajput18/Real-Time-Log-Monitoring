@@ -29,7 +29,7 @@ It streams simulated application logs, processes them serverlessly, and visualiz
 ## ⚙️ How to Use
 
 ### 1️⃣ Clone the Repository
-git clone https://github.com/<your-username>/
+git clone https://github.com/aditirajput18/Real-Time-Log-Monitoring.git
 
 real-time-log-monitoring-dashboard.git  
 
